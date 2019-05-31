@@ -1,0 +1,14 @@
+<div class="container align-content-center">
+
+  <form  ngNativeValidate class="form-group align-content-md-center" #loginFrm=ngForm (ngSubmit)="login(loginFrm.value)">
+    <div class="align-content-center">
+      <label>Enter email
+        <input type="email" name="email" required ngModel>
+      </label><br/>
+      <label>Enter password
+        <input type="password" name="password" required ngModel>
+      </label><br/>
+      <input class="btn-dark" type="submit" value="Login" name="Login">
+    </div>
+  </form>
+</div>
